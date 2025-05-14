@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Lucky Gift Scheme</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #e6f0fa; margin: 0; padding: 0; }
+        h1 { color: #007bff; }
+        .container { padding: 20px; }
+        iframe { width: 100%; height: 600px; border: none; }
+        #result { margin-top: 20px; padding: 20px; background-color: #fff; border-radius: 10px; display: none; }
+        button { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Lucky Gift Scheme!</h1>
+        <p>Fill the form below to participate and win exciting gifts!</p>
+        <iframe src="YOUR_GOOGLE_FORM_LINK" frameborder="0"></iframe>
+        <div id="result">
+            <h2>Congratulations!</h2>
+            <p>You won: <span id="gift"></span></p>
+            <button onclick="sendWhatsAppMessage()">Get Gift Details on WhatsApp</button>
+        </div>
+    </div>
+    <script>
+        // Google Form सबमिशन डिटेक्ट करने के लिए (मोबाइल पर सीमित काम करता है)
+        window.addEventListener('message', function(event) {
+            if (event.data === 'formSubmitted') {
+                showRandomGift();
+            }
+        });
+
+        // रैंडम गिफ्ट चुनें
+        function showRandomGift() {
+            const gifts = ["Bluetooth", "Cover", "Charger"];
+            const randomGift = gifts[Math.floor(Math.random() * gifts.length)];
+            document.getElementById("gift").textContent = randomGift;
+            document.getElementById("result").style.display = "block";
+            localStorage.setItem("selectedGift", randomGift); // गिफ्ट स्टोर करें
+        }
+
+        // WhatsApp मैसेज भेजें
+        function sendWhatsAppMessage() {
+            const gift = localStorage.getItem("selectedGift");
+            const message = `Congratulations! You have won a ${gift} in the Lucky Gift Scheme. Contact us at 7020022399 to claim your gift!`;
+            const whatsappUrl = `https://wa.me/917020022399?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // अगर फॉर्म सबमिशन डिटेक्शन काम न करे, तो मैन्युअल ट्रिगर
+        setTimeout(() => {
+            if (confirm("Have you submitted the form?")) {
+                showRandomGift();
+            }
+        }, 10000); // 10 सेकंड बाद चेक करें
+    </script>
+</body>
+</html>
