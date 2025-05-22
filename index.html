@@ -1,57 +1,225 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Lucky Gift Scheme</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Mobile Retail in Amravati</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #e6f0fa; margin: 0; padding: 0; }
-        h1 { color: #007bff; }
-        .container { padding: 20px; }
-        iframe { width: 100%; height: 600px; border: none; }
-        #result { margin-top: 20px; padding: 20px; background-color: #fff; border-radius: 10px; display: none; }
-        button { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #1a1a1a;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            width: 350px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card h2 {
+            margin: 0 0 10px;
+            color: white;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+        .card p {
+            margin: 8px 0;
+            color: white;
+            font-size: 1em;
+        }
+        .card a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+        /* Solid background colors for cards */
+        .card-1 { background-color: #ff8c66; } /* Orange */
+        .card-2 { background-color: #66b3ff; } /* Blue */
+        .card-3 { background-color: #66cc99; } /* Green */
+        .card-4 { background-color: #ff99cc; } /* Pink */
+        .card-5 { background-color: #cc99ff; } /* Purple */
+        .card-6 { background-color: #ffcc66; } /* Yellow */
+        .card-7 { background-color: #66cccc; } /* Cyan */
+        .card-8 { background-color: #ff6699; } /* Red-Pink */
+        .card-9 { background-color: #99cc66; } /* Light Green */
+        .card-10 { background-color: #ff9966; } /* Peach */
+        .card-11 { background-color: #66b3ff; } /* Blue */
+        .card-12 { background-color: #cc66cc; } /* Magenta */
+        .card-13 { background-color: #66cc99; } /* Green */
+        .card-14 { background-color: #ff99cc; } /* Pink */
+        .card-15 { background-color: #cc99ff; } /* Purple */
+        .card-16 { background-color: #ffcc66; } /* Yellow */
+        .card-17 { background-color: #66cccc; } /* Cyan */
+        .card-18 { background-color: #ff6699; } /* Red-Pink */
+        .card-19 { background-color: #99cc66; } /* Light Green */
+        /* Highlight box at the bottom */
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            width: 80%;
+            max-width: 700px;
+            font-weight: 500;
+            color: #d32f2f;
+            border: 2px solid #d32f2f;
+            font-size: 1.1em;
+            margin-top: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Lucky Gift Scheme!</h1>
-        <p>Fill the form below to participate and win exciting gifts!</p>
-        <iframe src="YOUR_GOOGLE_FORM_LINK" frameborder="0"></iframe>
-        <div id="result">
-            <h2>Congratulations!</h2>
-            <p>You won: <span id="gift"></span></p>
-            <button onclick="sendWhatsAppMessage()">Get Gift Details on WhatsApp</button>
+    <h1>Premier Mobile Retail in Amravati</h1>
+    <div class="card-container">
+        <div class="card card-1">
+            <h2>Shiv Mobile Shoppee</h2>
+            <p><strong>Address:</strong> Jaisthambh Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 9960909425</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/4GBkSNZ" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-2">
+            <h2>Mobile Zone</h2>
+            <p><strong>Address:</strong> U3, Opp City Kotwali Police Station, Jaisthambh Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 9503610100</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/KNw3sZm" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-3">
+            <h2>Magic Mobile And Enterprises</h2>
+            <p><strong>Address:</strong> Jaisthambh Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 9325696269</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/RqQxakd" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-4">
+            <h2>Jai Mobile Shopee</h2>
+            <p><strong>Address:</strong> Jaisthambh Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 9370191910</p>
+            <p><strong>Location:</strong> <a href="https://jsdl.in/RSL-JMG1747846018" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-5">
+            <h2>Ahuja Electronics</h2>
+            <p><strong>Address:</strong> 7, Upper Ground Floor, New Complex, Jaisthambh Chowk, Amravati 444601</p>
+            <p><strong>Phone:</strong> 9850300300</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/Y6eZwfM" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-6">
+            <h2>Om Sai Mobile Shopee</h2>
+            <p><strong>Address:</strong> 19, S.K. Market, Shyam Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 9371157936</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/cTMrBjE" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-7">
+            <h2>AR Mobile Shopee</h2>
+            <p><strong>Address:</strong> Sitarambaba Market, Rajkamal Square, Amravati</p>
+            <p><strong>Phone:</strong> 8888661773</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/CwFdGSU" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-8">
+            <h2>Rajlaxmi Mobile Shopee</h2>
+            <p><strong>Address:</strong> Opposite Joshi Market, Mahaveer Market, Shyam Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 9422131985</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/yUbVNYV" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-9">
+            <h2>Tejwani Mobile</h2>
+            <p><strong>Address:</strong> Priyadarshani Complex, Shop No. 8/9, Near Bank of India, Jaisthambh Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 9420833737</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/Er11yeC" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-10">
+            <h2>Jai Govinda Mobile</h2>
+            <p><strong>Address:</strong> Shop No. A3/A4, Patel Complex, Opposite City Kotwali, Amravati, Maharashtra</p>
+            <p><strong>Phone:</strong> 8767810097</p>
+            <p><strong>Location:</strong> <a href="https://jsdl.in/RSL-VUR1747846346" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-11">
+            <h2>Gurunanak Mobile</h2>
+            <p><strong>Address:</strong> Jastambh Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 9370199995</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/iCkMo8h" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-12">
+            <h2>R K Mobile</h2>
+            <p><strong>Address:</strong> Jastambh Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 9021190600</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/vTGxsjE" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-13">
+            <h2>Vijay Marketing</h2>
+            <p><strong>Address:</strong> Jastambh Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 9823666979</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/YoodbsS" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-14">
+            <h2>H S Mobile</h2>
+            <p><strong>Address:</strong> Jastambh Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 8983555666</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/iFNQf7p" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-15">
+            <h2>Shree Sai Cell Care</h2>
+            <p><strong>Address:</strong> Jastambh Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 9518545414</p>
+            <p><strong>Location:</strong> <a href="https://jsdl.in/RSL-YOA1747845093" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-16">
+            <h2>Express Mobile</h2>
+            <p><strong>Address:</strong> Jastambh Chowk, Amravati</p>
+            <p><strong>Phone:</strong> 9823804455</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/THq1Msc" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-17">
+            <h2>Best Mobile</h2>
+            <p><strong>Address:</strong> Near Mahaveer Market, Shyam Chowk, Infront of Joshi Market, Amravati</p>
+            <p><strong>Phone:</strong> 7020022399</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/i5hgEuC" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-18">
+            <h2>New Maheswari Mobile</h2>
+            <p><strong>Address:</strong> Rajkamal Square, Amba Peth, Amravati, Maharashtra 444601</p>
+            <p><strong>Phone:</strong> 9423123927</p>
+            <p><strong>Location:</strong> <a href="https://g.co/kgs/uJGddb5" target="_blank">View on Google Maps</a></p>
+        </div>
+        <div class="card card-19">
+            <h2>Store 19</h2>
+            <p><strong>Address:</strong> [To be provided]</p>
+            <p><strong>Phone:</strong> [To be provided]</p>
+            <p><strong>Location:</strong> [To be provided]</p>
         </div>
     </div>
-    <script>
-        // Google Form सबमिशन डिटेक्ट करने के लिए (मोबाइल पर सीमित काम करता है)
-        window.addEventListener('message', function(event) {
-            if (event.data === 'formSubmitted') {
-                showRandomGift();
-            }
-        });
-
-        // रैंडम गिफ्ट चुनें
-        function showRandomGift() {
-            const gifts = ["Bluetooth", "Cover", "Charger"];
-            const randomGift = gifts[Math.floor(Math.random() * gifts.length)];
-            document.getElementById("gift").textContent = randomGift;
-            document.getElementById("result").style.display = "block";
-            localStorage.setItem("selectedGift", randomGift); // गिफ्ट स्टोर करें
-        }
-
-        // WhatsApp मैसेज भेजें
-        function sendWhatsAppMessage() {
-            const gift = localStorage.getItem("selectedGift");
-            const message = `Congratulations! You have won a ${gift} in the Lucky Gift Scheme. Contact us at 7020022399 to claim your gift!`;
-            const whatsappUrl = `https://wa.me/917020022399?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-        }
-
-        // अगर फॉर्म सबमिशन डिटेक्शन काम न करे, तो मैन्युअल ट्रिगर
-        setTimeout(() => {
-            if (confirm("Have you submitted the form?")) {
-                showRandomGift();
-            }
-        }, 10000); // 10 सेकंड बाद चेक करें
-    </script>
+    <div class="highlight">
+        Discover top-tier mobile stores offering authentic products at unbeatable prices, complete with exclusive gifts on every purchase. Elevate your shopping experience today!
+    </div>
 </body>
 </html>
